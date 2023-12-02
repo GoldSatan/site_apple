@@ -44,7 +44,7 @@
 	margin-top: 100px;
     text-align: center;
 }
-input[type="text"] {
+.container input[type="text"] {
     margin: 30px;
     padding-left: 31px;
     font-weight: 500;
@@ -56,4 +56,72 @@ input[type="text"] {
 }
 
 
+.col-2 {
+    max-height: 400px;
+    overflow: hidden;
+    padding: 20px 0;
+}
+.pre_content_popoup {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #bababa;
+    width: 900px;
+    padding: 12px 0;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.text_popup {
+    font-size: 19px;
+    margin: 0 22px;
+    color: #6b6b6b;
+}
+.icons_cub {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 900px;
+    margin: 0 auto;
+    padding: 55px 0 100px;
+    border-bottom: 1px solid #bababa;
+}
+.icon_block {
+    position: relative;
+    border: 1px solid #bababa;
+    margin: 0 22px;
+    border-radius: 50%;
+    width: 135px;
+    height: 135px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.icon img {
+    height: auto;
+    width: 76px;
+}
+.icon_block span {
+    position: absolute;
+    bottom: -35px;
+}
 
+.icon_block span:hover {
+    color: aqua;
+}
+
+.icon_block:hover >  span {
+    color: aqua;
+}
+
+.icons_cub div.icon_block:last-child span:hover,
+.icons_cub div.icon_block:first-child span:hover {
+    color: red;
+}
+.icons_cub div.icon_block:last-child:hover >  span,
+.icons_cub div.icon_block:first-child:hover >  span {
+    color: red;
+}
